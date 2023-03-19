@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-weight: 700;
   font-family: "Comfortaa", cursive;
@@ -23,12 +24,27 @@
 }
 
 .inputbox {
+  position: relative;
   border-radius: 10%;
   box-shadow: 0px 0px 67px 2px var(--color-secondary);
   width: 300px;
   height: 250px;
   background-color: var(--color-main);
   padding: 20px;
+  transform: scale(1);
+  animation: showTop 1s ease-out;
+  text-align: center;
+}
+.inputbox:before {
+  display: none;
+  position: relative;
+  top: 20px;
+  content: "Неправильно введены логин или пароль!";
+  background-color: rgba(253, 56, 56, 0.4);
+  opacity: 0.6;
+  font-size: 10px;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .container {
@@ -38,6 +54,7 @@
   flex-direction: column;
 }
 .container input {
+  color: #90928C;
   border: none;
   border-bottom: #90928C solid 2px;
   background: none;
@@ -52,7 +69,7 @@
   background: linear-gradient(-45deg, var(--color-main), #9dc9c0, #5b9dba, #78a6b9);
   background-size: 400% 400%;
   cursor: pointer;
-  transition: 0.3s ease-out;
+  transition: 0.3s ease;
   border: none;
   border-radius: 6px;
   padding: 5px;
@@ -61,12 +78,26 @@
 .submit:hover {
   box-shadow: 0 0 40px 1px #b4b4b4;
   transform: scale(1.1);
-  animation: gradient 4s ease infinite;
+  animation: gradient 4s linear infinite;
 }
 .submit:active {
   transform: scale(1.05);
 }
 
-.inactive {
-  display: none;
+@keyframes showTop {
+  0% {
+    top: -20%;
+    right: -10%;
+    transform: scale(0);
+  }
+  60% {
+    right: 0;
+    top: 0;
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=login-bar.css.map */

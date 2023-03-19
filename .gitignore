@@ -1,4 +1,6 @@
-main.scss
-main.css.map
-login-bar.scss
-login-bar.css.map
+/styles/main.scss
+/styles/main.css.map
+/styles/login-bar.scss
+/styles/login-bar.css.map
+/styles/block.scss
+/styles/block.css.map

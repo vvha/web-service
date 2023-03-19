@@ -4,3 +4,6 @@
 /styles/login-bar.css.map
 /styles/block.scss
 /styles/block.css.map
+/node_modules
+package-lock.json
+package.json

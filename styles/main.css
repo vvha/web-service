@@ -1,0 +1,68 @@
+:root {
+  --color-main: #e3e6dc;
+  --color-secondary: #3E606F;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../assets/fonts/comfortaa/Comfortaa-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../assets/fonts/comfortaa/Comfortaa-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../assets/fonts/comfortaa/Comfortaa-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../assets/fonts/comfortaa/Comfortaa-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito", sans-serif;
+  src: url("../assets/fonts/nunito/Nunito-Italic-VariableFont_wght.woff");
+  font-weight: 400;
+  display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Nunito", sans-serif;
+  src: url("../assets/fonts/nunito/Nunito-VariableFont_wght.woff");
+  font-weight: 400;
+  display: swap;
+  font-style: normal;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
+  background: linear-gradient(-45deg, var(--color-main), #9dc9c0, #5b9dba, var(--color-secondary));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */
